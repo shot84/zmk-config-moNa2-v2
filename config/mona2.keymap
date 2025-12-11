@@ -98,10 +98,17 @@
         tab_right_left: tab_right_left {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LC(TAB)>, <&kp LS(LC(TAB))>;
+            bindings = <&kp LC(LS(TAB))>, <&kp LC(TAB)>;
 
             tap-ms = <20>;
             label = "TAB_RIGHT_LEFT";
+        };
+
+        page_up_down: page_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "PAGE_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
     };
 
@@ -111,12 +118,12 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E           &kp R                    &kp T                                                      &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D           &kp F                    &kp G                                       &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp MINUS
+&kp A             &kp S         &kp D           &kp F                    &kp G                                       &lt 4 MINUS    &kp H        &kp J  &kp K     &kp L     &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp EXCLAMATION                &kp QUESTION   &kp N        &kp M  &mkp MB1  &mkp MB2  &lt 6 PERIOD
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &kp COMMA
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&page_up_down>;
         };
 
         layer_1 {
@@ -132,10 +139,10 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp F2             &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))     &kp PIPE                                               &kp D      &kp E      &kp F      &kp T             &kp G
-&kp TAB     &kp DOUBLE_QUOTES  &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &trans         &kp LBKT   &kp RBKT   &kp APOS   &kp LG(LS(DOWN))  &kp LA(LC(ENTER))
-&kp HASH    &kp PLUS           &kp EXCLAMATION   &kp QUESTION          &kp TILDE              &kp LG(LS(V))    &kp LA(LG(V))  &kp LG(A)  &kp LG(C)  &kp LG(V)  &kp LC(Q)         &kp LG(PLUS)
-&kp LCTRL   &trans             &kp AT_SIGN       &kp EQUAL             &trans                 &trans           &kp DELETE     &trans                                             &kp LG(MINUS)
+&kp ESCAPE  &kp F2             &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))     &kp PIPE                                               &kp LC(LA(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))     &kp LA(LC(G))
+&kp TAB     &kp DOUBLE_QUOTES  &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &trans         &kp LBKT       &kp RBKT       &kp APOS       &kp LG(LS(DOWN))  &kp LA(LC(ENTER))
+&kp HASH    &kp PLUS           &kp EXCLAMATION   &kp QUESTION          &kp TILDE              &kp LG(LS(V))    &kp LA(LG(V))  &kp LG(A)      &kp LG(C)      &kp LG(V)      &kp LC(Q)         &kp LG(PLUS)
+&kp LCTRL   &trans             &kp AT_SIGN       &kp EQUAL             &trans                 &trans           &kp DELETE     &trans                                                         &kp LG(MINUS)
             >;
 
             sensor-bindings = <&scroll_up_down>;
