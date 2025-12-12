@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/caksoylar  
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
+    - name: prospector  # <-- Prospector Scanner
+      url-base: https://github.com/t-ogura  # ★これを追加
   projects:
     - name: zmk
       remote: zmkfirmware
