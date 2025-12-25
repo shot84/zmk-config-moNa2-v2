@@ -12,8 +12,10 @@
 
 &mt {
     flavor = "balanced";
+
     // flavor = "tap-preferred";
     // tapping-term-ms = <250>;
+
     quick-tap-ms = <0>;
 };
 
@@ -84,7 +86,7 @@
         scroll_up_down: mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
             label = "scroll_up_down";
@@ -113,6 +115,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
+
         z_shft: zmk,behavior-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
