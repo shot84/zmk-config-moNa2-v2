@@ -11,9 +11,9 @@
 #define SCROLL 6
 
 &mt {
-    // flavor = "balanced";
-    flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    flavor = "balanced";
+    // flavor = "tap-preferred";
+    // tapping-term-ms = <250>;
     quick-tap-ms = <0>;
 };
 
@@ -113,6 +113,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
+        z_shft: zmk,behavior-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -122,7 +129,7 @@
             bindings = <
 &kp Q             &kp W         &kp E           &kp R                    &kp T                                                      &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A             &kp S         &kp D           &kp F                    &kp G                                       &lt 4 MINUS    &kp H        &kp J  &kp K     &kp L     &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp EXCLAMATION                &kp QUESTION   &kp N        &kp M  &mkp MB1  &mkp MB2  &lt 6 PERIOD
+&z_shft LSHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp EXCLAMATION                &kp QUESTION   &kp N        &kp M  &mkp MB1  &mkp MB2  &lt 6 PERIOD
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &kp COMMA
             >;
 
