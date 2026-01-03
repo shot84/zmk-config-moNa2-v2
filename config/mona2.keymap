@@ -152,10 +152,10 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp F2             &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))     &kp PIPE                                               &kp LC(LA(D))      &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))     &kp LA(LC(G))
-&kp TAB     &kp DOUBLE_QUOTES  &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &trans         &kp LBKT           &kp RBKT       &kp APOS       &kp LG(LS(DOWN))  &kp LA(LC(ENTER))
-&kp HASH    &kp PLUS           &kp EXCLAMATION   &kp QUESTION          &kp TILDE              &kp LG(LS(V))    &kp LA(LG(V))  &kp LG(A)          &kp LG(C)      &kp LG(V)      &kp LC(Q)         &kp LG(PLUS)
-&kp LCTRL   &trans             &kp AT_SIGN       &kp EQUAL             &trans                 &trans           &kp DELETE     &kp LS(PAGE_DOWN)                                                  &kp LG(MINUS)
+&kp ESCAPE  &kp F2             &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))     &kp PIPE                                               &kp LC(LA(D))  &kp LA(LC(E))  &kp LA(LC(F))  &kp LA(LC(T))     &kp LA(LC(G))
+&kp TAB     &kp DOUBLE_QUOTES  &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &trans         &kp LBKT       &kp RBKT       &kp APOS       &kp LG(LS(DOWN))  &kp LA(LC(ENTER))
+&kp HASH    &kp PLUS           &kp EXCLAMATION   &kp QUESTION          &kp TILDE              &kp LG(LS(V))    &kp LA(LG(V))  &kp LG(A)      &kp LG(C)      &kp LG(V)      &kp LC(Q)         &kp LG(PLUS)
+&kp LCTRL   &trans             &kp AT_SIGN       &kp EQUAL             &trans                 &trans           &kp DELETE     &trans                                                         &kp LG(MINUS)
             >;
 
             sensor-bindings = <&scroll_up_down>;
