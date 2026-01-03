@@ -127,7 +127,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - DELETE
-  - Sft+PAGE DOWN
+  - {t: ▽, type: trans}
   - Gui+MINUS
   '3':
   - {t: ▽, type: trans}
