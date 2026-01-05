@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - MINUS
-  - {t: Z, h: LSHIFT}
+  - Z
   - X
   - C
   - V
