@@ -16,7 +16,6 @@
 
     // flavor = "tap-preferred";
     // tapping-term-ms = <250>;
-
     // tapping-term-ms = <250>;
     // quick-tap-ms = <175>;
     // require-prior-idle-ms = <150>;
@@ -34,11 +33,6 @@
         layer4_ESC {
             bindings = <&lt 4 ESC>;
             key-positions = <39 38>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
         };
 
         source {
@@ -59,11 +53,6 @@
         new_tab {
             bindings = <&kp LG(T)>;
             key-positions = <4 3>;
-        };
-
-        reload {
-            bindings = <&kp LG(LS(R))>;
-            key-positions = <3 2>;
         };
     };
 
@@ -126,6 +115,15 @@
             tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
+
+        page_up_down: page_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
+
+            tap-ms = <20>;
+            label = "PAGE_UP_DOWN";
+        };
     };
 
     keymap {
@@ -133,10 +131,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E           &kp R                    &kp T                                                      &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A         &kp S         &kp D           &kp F                    &kp G                                       &lt 4 MINUS    &kp H        &kp J  &kp K     &kp L     &kp MINUS
+&kp Q             &kp W         &kp E           &kp R                    &kp T                                                      &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S         &kp D           &kp F                    &kp G                                       &lt 4 MINUS    &kp H        &kp J  &kp K     &kp L     &kp MINUS
 &z_shft LSHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp EXCLAMATION                &kp QUESTION   &kp N        &kp M  &mkp MB1  &mkp MB2  &lt 6 PERIOD
-&kp LCTRL     &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &kp COMMA
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &kp COMMA
             >;
 
             sensor-bindings = <&scroll_up_down>;
