@@ -101,13 +101,6 @@
             label = "TAB_RIGHT_LEFT";
         };
 
-        page_up_down: page_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "PAGE_UP_DOWN";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
-        };
-
         z_shft: zmk,behavior-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
