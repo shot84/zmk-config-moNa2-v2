@@ -130,7 +130,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &kp COMMA
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&page_up_down>;
         };
 
         layer_1 {
