@@ -63,7 +63,7 @@ layers:
   - Gui+RBKT
   - AT SIGN
   - UP ARROW
-  - COMMA
+  - GRAVE
   - PERCENT
   - {t: SLASH, h: LEFT SHIFT}
   - '1'
