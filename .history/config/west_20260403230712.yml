@@ -39,6 +39,6 @@ manifest:
       path: modules/prospector-zmk-module
     - name: zmk-unicode
       remote: urob
-      revision: v0.3
+      revision: main
   self:
     path: config

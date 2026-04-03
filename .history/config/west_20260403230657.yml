@@ -37,8 +37,8 @@ manifest:
       remote: prospector
       revision: v2.0.0
       path: modules/prospector-zmk-module
-    - name: zmk-unicode
+    - name: zmk-urob-module
       remote: urob
-      revision: v0.3
+      revision: main
   self:
     path: config

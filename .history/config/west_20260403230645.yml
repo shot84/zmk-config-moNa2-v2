@@ -15,7 +15,7 @@ manifest:
     - name: prospector  # <-- Prospector Scanner
       url-base: https://github.com/t-ogura  # ★これを追加
     - name: urob
-      url-base: https://github.com/urob
+    
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -37,8 +37,5 @@ manifest:
       remote: prospector
       revision: v2.0.0
       path: modules/prospector-zmk-module
-    - name: zmk-unicode
-      remote: urob
-      revision: v0.3
   self:
     path: config
