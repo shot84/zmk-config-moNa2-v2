@@ -132,7 +132,7 @@ layers:
   '3':
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
-  - PRINTSCREEN
+  - '&mkp MB3'
   - Ctl+TAB
   - F4
   - {t: ▽, type: trans}
@@ -142,8 +142,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
-  - Gui+RIGHT ARROW
-  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
+  - Gui+RIGHT
   - SEMICOLON
   - {t: ▽, type: trans}
   - LEFT BRACE
@@ -152,9 +152,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
-  - Gui+Sft+RIGHT ARROW
+  - Ctl+LEFT
+  - Ctl+DOWN
+  - Ctl+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
