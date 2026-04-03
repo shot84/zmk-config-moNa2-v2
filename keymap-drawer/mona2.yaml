@@ -64,7 +64,7 @@ layers:
   - AT SIGN
   - UP ARROW
   - GRAVE
-  - PERCENT
+  - '&uc 0xD7 0'
   - {t: SLASH, h: LEFT SHIFT}
   - '1'
   - '2'
